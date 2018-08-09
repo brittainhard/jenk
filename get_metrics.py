@@ -4,9 +4,7 @@ from boto import ec2
 from boto.ec2 import cloudwatch
 
 
-ids = ["i-011ea983a6f869c75"]
-sid="AKIAIQE36FLD6ZCKDPAQ"
-key="gmFu8dzYiDuWkvJXJCtJPLGlzLSiCS6u9BJ5F9dP"
+
 
 conn = ec2.connect_to_region("us-west-2", aws_access_key_id=sid, aws_secret_access_key=key)
 cloud = cloudwatch.connect_to_region("us-west-2", aws_access_key_id=sid, aws_secret_access_key=key)
